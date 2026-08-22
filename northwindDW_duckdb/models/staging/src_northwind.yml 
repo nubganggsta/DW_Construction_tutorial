@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: northwind # The name of the source, used to reference this source in dbt models
+    schema: main # The schema(dataset name) to which the source belongs. main is the default schema for DuckDB
+    description: "Raw flat files queried directly from the local workspace folder"
+    meta: # Additional metadata for the source
+      # {name} is a placeholder that automatically injects the table names listed below
+      external_location: 'datasets/{name}.csv'
+    tables:
+      - name: customer                  # Maps straight to datasets/customer.csv
+        description: "Customer data from the Northwind dataset"
