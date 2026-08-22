@@ -1,0 +1,49 @@
+version: 2
+
+sources:
+  - name: northwind
+    schema: main
+    description: "Raw flat files queried directly from the local workspace folder"
+    meta:
+      external_location: 'datasets/{name}.csv'
+    tables:
+      - name: customer
+        description: "Customer data from the Northwind dataset"
+      - name: employee_privileges
+        description: "Employee privileges data from the Northwind dataset"
+      - name: employees
+        description: "Employee data from the Northwind dataset"
+      - name: inventory_transaction_types
+        description: "Inventory transaction types data from the Northwind dataset"
+      - name: inventory_transactions
+        description: "Inventory transactions data from the Northwind dataset"
+      - name: invoices
+        description: "Invoices data from the Northwind dataset"
+      - name: order_details_status
+        description: "Orders details status data from the Northwind dataset"
+      - name: order_details
+        description: "Order details data from the Northwind dataset"
+      - name: orders_status
+        description: "Orders status data from the Northwind dataset"
+      - name: orders_tax_status
+        description: "Orders tax status data from the Northwind dataset"
+      - name: orders
+        description: "Order data from the Northwind dataset"
+      - name: privileges
+        description: "Privileges data from the Northwind dataset"
+      - name: products
+        description: "Product data from the Northwind dataset"
+      - name: purchase_order_details
+        description: "Purchase order details data from the Northwind dataset"
+      - name: purchase_order_status
+        description: "Purchase orders status data from the Northwind dataset"
+      - name: purchase_orders
+        description: "Purchase orders data from the Northwind dataset"
+      - name: sales_reports
+        description: "Sales reports data from the Northwind dataset"
+      - name: shippers
+        description: "Shippers data from the Northwind dataset"
+      - name: strings
+        description: "Strings data from the Northwind dataset"
+      - name: suppliers
+        description: "Supplier data from the Northwind dataset"
